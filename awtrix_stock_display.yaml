@@ -6,7 +6,7 @@ blueprint:
     ## ⚠️ REQUIREMENTS\n
     - **Home Assistant** 2024.6.0 or newer\n
     - **AWTRIX 3** device configured with MQTT\n
-    - **[Yahoo Finance Integration](https://www.home-assistant.io/integrations/yahoofinance/)** installed and configured\n\n
+    - **[Yahoo Finance Integration](https://github.com/iprak/yahoofinance)** installed via HACS\n\n
     ## 🎯 KEY FEATURES\n
     - **Dynamic colors**: Green for gains, red for losses, white for neutral\n
     - **Dynamic icons**: Trending up/down arrows based on price change\n

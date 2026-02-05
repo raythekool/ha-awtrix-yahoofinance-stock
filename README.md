@@ -17,7 +17,7 @@ Before using this blueprint, make sure you have:
 
 1. **Home Assistant** with blueprint support (2024.6.0 or newer)
 2. **AWTRIX 3** device configured and connected via MQTT
-3. **Yahoo Finance Integration** installed and configured ([documentation](https://www.home-assistant.io/integrations/yahoofinance/))
+3. **Yahoo Finance Integration** installed and configured ([GitHub](https://github.com/iprak/yahoofinance))
 
 ## 📦 Installation
 
@@ -52,10 +52,17 @@ Before using this blueprint, make sure you have:
 
 Before using this blueprint, you need to set up the Yahoo Finance integration:
 
-1. Go to Home Assistant → Settings → Devices & Services
-2. Click "Add Integration" and search for "Yahoo Finance"
-3. Enter the stock symbol you want to track (e.g., `AAPL`, `TSLA`, `BTC-USD`)
-4. The integration will create a sensor entity (e.g., `sensor.yahoofinance_aapl`)
+1. Install the **Yahoo Finance** custom integration via HACS:
+   - Open HACS in Home Assistant
+   - Search for "Yahoo Finance"
+   - Install the integration from [iprak/yahoofinance](https://github.com/iprak/yahoofinance)
+   - Restart Home Assistant
+
+2. Configure the integration:
+   - Go to Home Assistant → Settings → Devices & Services
+   - Click "Add Integration" and search for "Yahoo Finance"
+   - Enter the stock symbol you want to track (e.g., `AAPL`, `TSLA`, `BTC-USD`)
+   - The integration will create a sensor entity (e.g., `sensor.yahoofinance_aapl`)
 
 Repeat for each stock you want to display.
 
@@ -190,7 +197,7 @@ This project is distributed under the MIT License. See the `LICENSE` file for mo
 
 ## 🙏 Credits
 
-- Yahoo Finance Integration: [Home Assistant](https://www.home-assistant.io/integrations/yahoofinance/)
+- Yahoo Finance Integration: [iprak/yahoofinance](https://github.com/iprak/yahoofinance)
 - AWTRIX 3: [Blueforcer](https://github.com/Blueforcer/awtrix3)
 - Icons: [LaMetric](https://developer.lametric.com/icons)
 
